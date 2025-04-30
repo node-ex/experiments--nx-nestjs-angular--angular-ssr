@@ -14,6 +14,9 @@ module.exports = {
      */
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
   },
+  externals: {
+    './angular-ssr.engine.mjs': 'commonjs ./angular-ssr.engine.mjs',
+  },
   plugins: [
     // https://nx.dev/recipes/webpack/webpack-plugins#nxappwebpackplugin
     new NxAppWebpackPlugin({

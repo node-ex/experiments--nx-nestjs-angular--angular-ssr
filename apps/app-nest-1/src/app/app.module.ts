@@ -3,6 +3,7 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
+import { AngularSsrModule } from './angular-ssr/angular-ssr.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { ConfigModule } from '@nestjs/config';
       expandVariables: true,
       // cache: true,
     }),
+    AngularSsrModule,
   ],
   controllers: [AppController],
   providers: [AppService],

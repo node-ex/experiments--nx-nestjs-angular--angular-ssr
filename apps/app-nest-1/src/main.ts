@@ -19,8 +19,10 @@ async function bootstrap() {
   // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
   const port = Number(process.env['PORT']) || 3000;
   await app.listen(port);
+
+  Logger.log(`🚀 SSR is running on: http://localhost:${port.toString()}`);
   Logger.log(
-    `🚀 Application is running on: http://localhost:${port.toString()}/${globalPrefix}`,
+    `🚀 API is available at: http://localhost:${port.toString()}/${globalPrefix}`,
   );
 }
 
