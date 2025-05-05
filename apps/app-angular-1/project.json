@@ -5,7 +5,6 @@
   "prefix": "app",
   "sourceRoot": "apps/app-angular-1/src",
   "tags": [],
-  "implicitDependencies": ["app-nest-1"],
   "targets": {
     "build": {
       "executor": "@nx/angular:application",
