@@ -7,7 +7,7 @@ docker container run \
   --rm \
   --init \
   --detach \
-  --publish host_ip=0.0.0.0,published=3000,target=3000 \
+  --publish host_ip=0.0.0.0,published=4000,target=4000 \
   my-ssr:latest \
   tail \
     -f \
