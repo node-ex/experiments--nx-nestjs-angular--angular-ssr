@@ -7,13 +7,20 @@ This is an experiment project that demonstrates how to implement SSR for the Ang
 Steps:
 
 1. Setup the repository (see below)
-2. Build the Angular app
+2. Build the Angular app 1
+   1. `pnpm exec nx run app-angular-1:build`
 3. Inspect the `dist/apps/app-angular-1/server` directory
-4. Start the Angular development server
+4. Start the development server for the Angular app 1 OR start the built server for the Angular app 1
+   1. `pnpm exec nx run app-angular-1:serve`
+   2. `node ./dist/apps/app-angular-1/server/server.mjs`
 5. Go to `http://localhost:4200` to see FE
 6. Check the page source code in the browser to see the rendered HTML
 
 Implementation: See a couple of latest commits.
+
+### Dockerization
+
+You need to understand the basic Docker concepts. Use scripts in `./scripts/docker/ssr` folder to build and run the Docker image.
 
 ## Local development
 
